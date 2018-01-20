@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Code Dating </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	
+	
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+
+</head>
+<body>
+
+	<header>
+		<a href="index.html"><h1>Coders < <i class="fa fa-heart fa-2x" aria-hidden="true"></i> >  Dating</h1></a>
+		<img class="carousel-inner" src="img/hero.jpg">
+
+		<div class="buts">
+			
+			
+		<a href="index.html"> <button id="all" class="btn btn-outline-primary"> <i class="fa fa-users" aria-hidden="true"></i> ALL </button> </a>
+
+			<a href="male.html"> <button id="male" class="btn btn-outline-info"> <i class="fa fa-male" aria-hidden="true"></i> MALE </button> </a>
+
+			<a href="female.html"> <button id="female" class="btn btn-outline-danger"> <i class="fa fa-female" aria-hidden="true"></i> FEMALE </button> </a>
+
+		</div>
+
+	</header>
+
+
+
+  <div class="row" id="bigList">
+
+  <!-- INVOKE DATA MODEL AND VIEW DEFINITIONS-->
+ 
+  <script src="index.js"></script>
+
+  <!-- CALL PAGE SPECIFIC VIEW FUNCTION -->
+  <script>
+
+     showBigList();
+
+  </script>
+
+</div>
+
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+
+<footer> 
+	<div class=" text-center">
+ 
+  <div class="card-body">
+    <h5 class="card-title">Thank you for visit our webside :)</h5>
+    <p class="card-text">Coders < <i class="fa fa-heart fa-2x" aria-hidden="true"></i> > Dating </p>
+    <div>&copy Ahmed</div> 
+  </div>
+  
+</div>
+ </footer>
+<script type="text/javascript">
+
+ $('#1').on('click',function (){
+
+
+    $('#likeout1').text( 5 + 1);
+
+    $('#1').css('background-color' , ('blue'));
+
+    $('#1').text('LIKED');
+
+    $('#heart1').css('color' , ('red'));
+
+});
+
+  $('#b1').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/male1.jpg');
+        $('#nams1').text('Max Green');
+        $('#ages1').text('24');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+        $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50% "  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'70% chance</div>'+'</li>');
+    }
+});
+
+ $('#2').on('click',function (){
+
+
+    $('#likeout2').text( 8 + 1);
+
+    $('#2').css('background-color' , ('blue'));
+
+    $('#2').text('LIKED');
+
+    $('#heart2').css('color' , ('red'));
+
+
+
+
+});
+ $('#b2').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/male2.jpg');
+         $('#nams1').text('Leo Van hullt');
+        $('#ages1').text('30');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60% "  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'80% chance</div>'+'</li>');
+    }
+});
+
+ $('#3').on('click',function (){
+
+
+    $('#likeout3').text( 3 + 1);
+
+    $('#3').css('background-color' , ('blue'));
+
+    $('#3').text('LIKED');
+
+    $('#heart3').css('color' , ('red'));
+
+});
+  $('#b3').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/portrait-1287413_960_720.jpg');
+         $('#nams1').text('Martin Oliver');
+        $('#ages1').text('21');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10% "  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'20% chance</div>'+'</li>');
+    }
+});
+
+
+
+ $('#4').on('click',function (){
+
+
+    $('#likeout4').text( 23 + 1);
+
+    $('#4').css('background-color' , ('blue'));
+
+    $('#4').text('LIKED');
+
+    $('#heart4').css('color' , ('red'));
+
+});
+  $('#b4').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/stylish-boy-2988896_960_720.jpg');
+         $('#nams1').text('Alhussen Abdaljabar');
+        $('#ages1').text('19');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 15% "  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'30% chance</div>'+'</li>');
+    }
+});
+
+
+
+ $('#5').on('click',function (){
+
+
+    $('#likeout5').text( 22 + 1);
+
+    $('#5').css('background-color' , ('blue'));
+
+    $('#5').text('LIKED');
+
+    $('#heart5').css('color' , ('red'));
+
+});
+
+  $('#b5').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/application-1934972_960_720.jpg');
+         $('#nams1').text('Mat Ferdenand');
+        $('#ages1').text('27');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30% "  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'50% chance</div>'+'</li>');
+    }
+});
+
+ $('#6').on('click',function (){
+
+
+    $('#likeout6').text( 14 + 1);
+
+    $('#6').css('background-color' , ('blue'));
+
+    $('#6').text('LIKED');
+
+    $('#heart6').css('color' , ('red'));
+
+});
+
+ $('#b6').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/male-2637801_960_720.jpg');
+         $('#nams1').text('Andy Orten');
+        $('#ages1').text('33');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70% "  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'90% chance</div>'+'</li>');
+    }
+});
+
+ $('#7').on('click',function (){
+
+
+    $('#likeout7').text( 11 + 1);
+
+    $('#7').css('background-color' , ('blue'));
+
+    $('#7').text('LIKED');
+
+    $('#heart7').css('color' , ('red'));
+
+});
+
+  $('#b7').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/boy-2119178_960_720.jpg');
+         $('#nams1').text('Adam Freeman');
+        $('#ages1').text('18');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60% "  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'80% chance</div>'+'</li>');
+    }
+});
+
+ $('#8').on('click',function (){
+
+
+    $('#likeout8').text( 999 + 1);
+
+    $('#8').css('background-color' , ('blue'));
+
+    $('#8').text('LIKED');
+
+    $('#heart8').css('color' , ('red'));
+
+});
+
+  $('#b8').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/proimg.jpg');
+         $('#nams1').text('Rosa Jackson');
+        $('#ages1').text('22');
+        $('#relation1').text(' not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100% "  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'100% chance </div>'+'</li>');
+    }
+});
+
+ $('#9').on('click',function (){
+
+
+    $('#likeout9').text( 12 + 1);
+
+    $('#9').css('background-color' , ('blue'));
+
+    $('#9').text('LIKED');
+
+    $('#heart9').css('color' , ('red'));
+
+});
+
+  $('#b9').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/model-2349105_960_720.jpg');
+         $('#nams1').text('Lata Nelsson');
+        $('#ages1').text('25');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'50% chance</div>'+'</li>');
+    }
+});
+
+ $('#10').on('click',function (){
+
+
+    $('#likeout10').text( 19 + 1);
+
+    $('#10').css('background-color' , ('blue'));
+
+    $('#10').text('LIKED');
+
+    $('#heart10').css('color' , ('red'));
+
+});
+
+  $('#b10').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/pretty-girl-2039216_960_720.jpg');
+         $('#nams1').text('Reem Jaber');
+        $('#ages1').text('29');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'30% chance</div>'+'</li>');
+    }
+});
+
+ $('#11').on('click',function (){
+
+
+    $('#likeout11').text( 20 + 1);
+
+    $('#11').css('background-color' , ('blue'));
+
+    $('#11').text('LIKED');
+
+    $('#heart11').css('color' , ('red'));
+
+});
+
+  $('#b11').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/portrait-597173_960_720.jpg');
+         $('#nams1').text('Sally Ronald');
+        $('#ages1').text('30');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'80% chance</div>'+'</li>');
+    }
+});
+
+ $('#12').on('click',function (){
+
+
+    $('#likeout12').text( 42 + 1);
+
+    $('#12').css('background-color' , ('blue'));
+
+    $('#12').text('LIKED');
+
+    $('#heart12').css('color' , ('red'));
+
+});
+
+  $('#b12').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/womens-2437214_960_720.jpg');
+         $('#nams1').text('Zahra Adams');
+        $('#ages1').text('25');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'80% chance</div>'+'</li>');
+    }
+});
+
+ $('#13').on('click',function (){
+
+
+    $('#likeout13').text( 14 + 1);
+
+    $('#13').css('background-color' , ('blue'));
+
+    $('#13').text('LIKED');
+
+    $('#heart13').css('color' , ('red'));
+
+});
+
+  $('#b13').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/female1.jpg');
+         $('#nams1').text('Lana Ibraham');
+        $('#ages1').text('40');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'30% chance</div>'+'</li>');
+    }
+});
+
+ $('#14').on('click',function (){
+
+
+    $('#likeout14').text( 18 + 1);
+
+    $('#14').css('background-color' , ('blue'));
+
+    $('#14').text('LIKED');
+
+    $('#heart14').css('color' , ('red'));
+
+});
+
+  $('#b14').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/model-1155293_960_720.jpg');
+         $('#nams1').text('Angileka Stark');
+        $('#ages1').text('18');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'70% chance</div>'+'</li>');
+    }
+});
+
+ $('#15').on('click',function (){
+
+
+    $('#likeout15').text( 12 + 1);
+
+    $('#15').css('background-color' , ('blue'));
+
+    $('#15').text('LIKED');
+
+    $('#heart15').css('color' , ('red'));
+
+});
+
+  $('#b15').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/model-2425659_960_720.jpg');
+         $('#nams1').text('Christina Watson');
+        $('#ages1').text('21');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'50% chance</div>'+'</li>');
+    }
+});
+
+ $('#16').on('click',function (){
+
+
+    $('#likeout16').text( 11 + 1);
+
+    $('#16').css('background-color' , ('blue'));
+
+    $('#16').text('LIKED');
+
+    $('#heart16').css('color' , ('red'));
+
+});
+
+  $('#b16').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/pose-2690310_960_720.jpg');
+         $('#nams1').text('Margarita Afron');
+        $('#ages1').text('19');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'70% chance</div>'+'</li>');
+    }
+});
+
+ $('#17').on('click',function (){
+
+
+    $('#likeout17').text( 7 + 1);
+
+    $('#17').css('background-color' , ('blue'));
+
+    $('#17').text('LIKED');
+
+    $('#heart17').css('color' , ('red'));
+
+});
+
+  $('#b17').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/womens-2349045_960_720.jpg');
+         $('#nams1').text('Taylor Koslo');
+        $('#ages1').text('31');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'40% chance</div>'+'</li>');
+    }
+});
+
+ $('#18').on('click',function (){
+
+
+    $('#likeout18').text( 10 + 1);
+
+    $('#18').css('background-color' , ('blue'));
+
+    $('#18').text('LIKED');
+
+    $('#heart18').css('color' , ('red'));
+
+});
+
+  $('#b18').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/man-2367953_960_720.jpg');
+         $('#nams1').text('Markovic Anderson');
+        $('#ages1').text('23');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'30% chance</div>'+'</li>');
+    }
+});
+
+ $('#19').on('click',function (){
+
+
+    $('#likeout19').text( 12 + 1);
+
+    $('#19').css('background-color' , ('blue'));
+
+    $('#19').text('LIKED');
+
+    $('#heart19').css('color' , ('red'));
+
+});
+
+  $('#b19').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/man-2792505_960_720.jpg');
+         $('#nams1').text('Mario propst');
+        $('#ages1').text('25');
+        $('#relation1').text(' not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'50% chance</div>'+'</li>');
+    }
+});
+
+ $('#20').on('click',function (){
+
+
+    $('#likeout20').text( 31 + 1);
+
+    $('#20').css('background-color' , ('blue'));
+
+    $('#20').text('LIKED');
+
+    $('#heart20').css('color' , ('red'));
+
+});
+
+  $('#b20').on({
+    'click': function(){
+        $('#imgs1').attr('src','img/boy-2082270_960_720.jpg');
+         $('#nams1').text('Stiva Hanndanuvic');
+        $('#ages1').text('22');
+        $('#relation1').text('not in a relation');
+        $( "#cr" ).empty();
+         $('#cr').append('<li>'+'<div class="progress">Matching :'
+                                                +'<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="200">'
+                                                +'</div>'
+                                                +'90% chance</div>'+'</li>');
+    }
+});
+
+
+ </script>
+</body>
+</html>
